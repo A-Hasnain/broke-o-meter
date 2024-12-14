@@ -1,0 +1,171 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #4b00b0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+}
+
+/* Pie Chart Section */
+#expense-chart {
+    margin: auto;
+    display: block;
+}
+
+/* Edit Form Styling */
+#edit-form-container {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 1000;
+    display: none;
+    width: 300px;
+}
+
+#edit-form-container h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+#edit-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#edit-form-container input,
+#edit-form-container select,
+#edit-form-container button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#edit-form-container button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#edit-form-container button:hover {
+    background-color: #4b00b0;
+}
+
+#edit-form-container button[type="button"] {
+    background-color: #f44336;
+}
+
+#edit-form-container button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+/* History Page Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li button:hover {
+    background-color: #d32f2f;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+footer a {
+    color: #6200ea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

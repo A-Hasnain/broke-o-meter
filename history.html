@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Transaction History</h1>
+        <button onclick="window.location.href='index.html'">Go Back</button>
+    </header>
+    <main>
+        <section>
+            <h2>Search Transactions</h2>
+            <form id="search-form">
+                <input type="date" id="search-date" placeholder="Search by Date">
+                <input type="text" id="search-description" placeholder="Search by Description">
+                <button type="button" id="search-button">Search</button>
+            </form>
+        </section>
+        <section>
+            <h2>Apply Grouping Periods</h2>
+            <form id="add-group-form">
+                <label for="group-length">Group By:</label>
+                <select id="group-length">
+                    <option value="weekly">Weekly</option>
+                    <option value="bi-weekly">Bi-Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <input type="date" id="group-start-date" placeholder="Start Date" required>
+                <input type="date" id="group-end-date" placeholder="End Date" required>
+                <button type="button" id="add-group-button">Add Period</button>
+            </form>
+            <ul id="group-periods"></ul>
+        </section>
+        <section id="history">
+            <h2>Grouped Transactions</h2>
+            <div id="grouped-history"></div>
+        </section>
+        <div id="edit-form-container"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Transaction History. Built with ❤️. Powered by <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>.</p>
+    </footer>
+    <script src="public/js/history.js"></script>
+</body>
+</html>
