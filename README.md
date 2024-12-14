@@ -44,3 +44,4 @@ Technologies to Use:
 Frontend: HTML, CSS, JavaScript.
 No Backend: Store data in LocalStorage for simplicity.
 
+ *SURVEY QUESTIONS & ANSWERS ARE ADDED IN THE REPORT*
